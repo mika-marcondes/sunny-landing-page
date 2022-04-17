@@ -1,15 +1,18 @@
 body {
     margin: 0;
-    height: 100vh;
     box-sizing: border-box;
     font-family: 'Fraunces', serif;
+}
+
+* p {
+    font-family: 'Barlow', sans-serif;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    height: 100%;
+    grid-template-rows: auto;
+    /*margin: 1rem;*/
 }
 
 header {
@@ -34,17 +37,18 @@ header > div a {
 }
 
 .background {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
     background-image: url("images/desktop/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3ebdfd;
+    height: 100vh;
 }
 
 .background h1 {
@@ -55,4 +59,39 @@ header > div a {
 .background img {
     height: 5rem;
     padding: 6rem 0;
+}
+
+.item-transform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25%;
+}
+
+.item-transform h1 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.item-transform p {
+    line-height: 1.5rem;
+    max-width: 45ch;
+    padding-bottom: 1rem;
+}
+
+.item-transform a {
+    font-weight: 900;
+}
+
+.egg {
+    background: url("images/desktop/image-transform.jpg") no-repeat center;
+}
+
+.red-cup {
+    background: url("images/desktop/image-stand-out.jpg") no-repeat center;
+}
+
+.grid-fit {
+    height: 70vh;
+    background-size: cover;
 }
