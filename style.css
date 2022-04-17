@@ -1,0 +1,8 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
