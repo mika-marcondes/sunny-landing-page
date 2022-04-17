@@ -5,6 +5,7 @@ body {
 }
 
 * p {
+    line-height: 1.5rem;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -74,7 +75,6 @@ header > div a {
 }
 
 .item-transform p {
-    line-height: 1.5rem;
     max-width: 45ch;
     padding-bottom: 1rem;
 }
@@ -89,6 +89,27 @@ header > div a {
 
 .red-cup {
     background: url("images/desktop/image-stand-out.jpg") no-repeat center;
+}
+
+.txt-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+}
+
+.txt-center p {
+    max-width: 45ch;
+    padding-bottom: 5%;
+}
+
+.cherry {
+    background: url("images/desktop/image-graphic-design.jpg") no-repeat center;
+}
+
+.orange {
+    background: url("images/desktop/image-photography.jpg") no-repeat center;
 }
 
 .grid-fit {
