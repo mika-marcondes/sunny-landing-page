@@ -123,9 +123,22 @@ header > div a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
-#flex-direction {
+.flex-direction {
     display: flex;
     flex-direction: row;
+}
+
+.client-style {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    width: 25vw;
 }
