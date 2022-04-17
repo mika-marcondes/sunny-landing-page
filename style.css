@@ -1,8 +1,12 @@
-body{
-    background-color: cornflowerblue;
+body {
+    margin: 0;
 }
 
 .flex {
     display: flex;
-    flex-direction: row;
+    height: 100%;
+}
+
+.bg-header img {
+    width: 100%;
 }
