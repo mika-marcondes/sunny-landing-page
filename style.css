@@ -171,13 +171,16 @@ header > div a {
     align-items: center;
     justify-content: end;
     text-align: center;
-    padding: 0 25%;
     line-height: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.txt-center h1 {
+    margin: 0;
 }
 
 .txt-center p {
     max-width: 45ch;
-    padding-bottom: 20%;
 }
 
 .cherry {
@@ -270,7 +273,7 @@ footer {
 }
 
 /* Mobile Settings */
-@media (max-width: 425px) {
+@media (max-width: 600px) {
 
     .grid-container {
         display: flex;
@@ -289,9 +292,29 @@ footer {
         display: flex;
     }
 
+    .grid-fit {
+        height: 50vh;
+    }
+
+    .item-transform {
+        padding: 2rem 10%;
+    }
+
+    .cherry {
+        height: 80vh;
+    }
+
+    .orange {
+        height: 80vh;
+    }
+
+    .txt-center {
+        padding: 2rem;
+    }
+
 }
 
-@media (min-width: 426px) and (max-width: 768px){
+@media (min-width: 600px) and (max-width: 792px){
 
     .button-contact {
         display: none;
@@ -303,6 +326,14 @@ footer {
 
     .hamburger {
         display: flex;
+    }
+
+    .item-transform {
+        padding: 2rem 10%;
+    }
+
+    .txt-center {
+        padding: 2rem;
     }
 
 }
