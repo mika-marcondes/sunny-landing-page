@@ -198,41 +198,51 @@ header > div a {
 
 .client {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .flex-direction {
     display: flex;
     flex-direction: row;
+    padding: 0 4rem;
+    align-items: center;
     justify-content: center;
-    padding: 0 10%;
+
+}
+
+.client-style {
+    padding: 0 2rem;
 }
 
 .client-style p {
     max-width: 45ch;
     line-height: 1.5rem;
-    padding: 0 5% 8% 5%;
 }
 
 .client-style h3 {
-    margin: 0;
+    margin: 2em 0 0 0;
     font-weight: 900;
 }
 
 .client-style h5 {
-    margin: .5rem;
+    margin: 0;
     color: hsl(213, 9%, 39%);
     font-family: 'Barlow', sans-serif;
 }
 
 .testimonial {
+    margin: 0;
+    padding: 5rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: hsl(213, 9%, 39%);
     letter-spacing: .2rem;
-    margin: 7rem 0 3rem 0;
 }
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery img {
@@ -312,9 +322,24 @@ footer {
         padding: 2rem;
     }
 
+    .flex-direction {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .client-style {
+        padding: 1rem
+    }
+
+    .gallery img {
+        flex: 50%;
+    }
+
+
 }
 
-@media (min-width: 600px) and (max-width: 792px){
+@media (min-width: 600px) and (max-width: 768px){
 
     .button-contact {
         display: none;
@@ -334,6 +359,16 @@ footer {
 
     .txt-center {
         padding: 2rem;
+    }
+
+    .flex-direction {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .client-style {
+        padding: 1rem
     }
 
 }
