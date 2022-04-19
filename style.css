@@ -1,3 +1,7 @@
+html {
+    margin: 0;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -10,7 +14,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 }
 
@@ -64,12 +68,12 @@ header > div a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 25%;
+    padding: 2rem 25%;
 }
 
 .item-transform h1 {
+    margin: 0;
     font-weight: 900;
-    font-size: 2rem;
 }
 
 .item-transform p {
@@ -79,6 +83,7 @@ header > div a {
 }
 
 .item-transform a {
+    text-decoration: underline hsl(51, 100%, 49%) .50rem;
     font-weight: 900;
 }
 
@@ -192,4 +197,14 @@ footer {
 
 .social-media img {
     padding: 1rem;
+}
+
+/* Mobile Settings */
+@media (max-width: 768px) {
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
