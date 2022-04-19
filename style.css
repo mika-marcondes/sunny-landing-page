@@ -278,8 +278,26 @@ footer {
     color: #25564b;
 }
 
-.social-media img {
-    padding: 1rem;
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-hover:hover {
+    cursor: pointer;
+    color: white;
+    transition: .20s ease-in;
+}
+
+.footer-icon {
+    margin: 0 .7rem;
+    fill: #25564b;
+}
+
+.footer-icon:hover svg {
+    cursor: pointer;
+    fill: white;
+    transition: .20s ease-in;
 }
 
 /* Mobile Settings */
