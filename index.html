@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
 
+
     <title>Sunnyside agency landing page</title>
 
     <style>
@@ -17,6 +18,21 @@
 </head>
 
 <body>
+
+<script type="text/javascript" src="script.js"></script>
+
+<section id="ham-container">
+
+    <div class="mobileMenu">
+        <div class="menuMobileStyle">
+            <a>About</a>
+            <a>Services</a>
+            <a>Projects</a>
+            <button class="contactStyle">CONTACT</button>
+        </div>
+    </div>
+
+</section>
 
 <div class="grid-container">
 
@@ -28,8 +44,9 @@
             <a>Services</a>
             <a>Projects</a>
             <button class="button-contact">CONTACT</button>
-            <button class="hamburger"></button>
+            <button class="hamburger" onclick="toggleMenu()"></button>
         </div>
+
     </header>
 
     <main class="background">

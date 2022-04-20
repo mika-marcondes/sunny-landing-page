@@ -26,7 +26,7 @@ header {
     grid-row: 1 / 2;
     background-color: #3ebdfd;
     height: 4rem;
-    padding: .5rem 2rem 0 2rem;
+    padding: .5rem 1rem 0 1rem;
     color: white;
     font-family: 'Barlow', sans-serif;
 }
@@ -300,8 +300,14 @@ footer {
     transition: .20s ease-in;
 }
 
+#ham-container {
+    display: none;
+    justify-content: center;
+}
+
+
 /* Mobile Settings */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .grid-container {
         display: flex;
@@ -354,6 +360,47 @@ footer {
         flex: 50%;
     }
 
+    #ham-container {
+        display: none;
+        justify-content: center;
+    }
+
+    .mobileMenu {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .menuMobileStyle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+        background-color: white;
+        margin-top: 15vh;
+        padding: 1rem;
+    }
+
+    .menuMobileStyle a {
+        font-family: 'Barlow', sans-serif;
+        color: hsl(213, 9%, 39%);
+        margin: 1rem;
+    }
+
+    .contactStyle {
+        margin: 1rem;
+        border: 0;
+        border-radius: 50px;
+        width: 7rem;
+        height: 3rem;
+        background-color: hsl(51, 100%, 49%);
+        font-family: 'Fraunces', serif;
+    }
 
 }
 
@@ -388,5 +435,6 @@ footer {
     .client-style {
         padding: 1rem
     }
+
 
 }
