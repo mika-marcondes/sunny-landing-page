@@ -333,7 +333,7 @@ footer {
     }
 
     .item-transform {
-        padding: 2rem 10rem;
+        padding: 2rem 5rem;
     }
 
     .cherry {
@@ -381,7 +381,7 @@ footer {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        width: 30vw;
+        width: 12em;
         height: auto;
         background-color: white;
         margin-top: 4rem;
