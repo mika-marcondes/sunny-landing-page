@@ -180,6 +180,7 @@ header > div a {
 
 .txt-center p {
     max-width: 45ch;
+    padding-bottom: 2rem;
 }
 
 .cherry {
